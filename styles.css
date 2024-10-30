@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color Variables */
+    --background: #dfdfdf;
+    --black: #050315;
+    --primary-color: #2f27ce;
+
+    /* Font Variables */
+    font-family: 'Inter', sans-serif;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: var(--font-bold);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.outlined-text {
+    color: var(--background);
+    -webkit-text-stroke: 1px var(--black);  
+}
+
+p {
+    font-weight: var(--font-regular);
+    font-style: italic;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--background);
+    font-weight: var(--font-bold);
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;}
