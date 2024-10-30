@@ -65,6 +65,53 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    
-    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;}
+button:hover {   
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+img {
+    height: 300px;
+}
+
+.carousel {
+    position: relative;
+}
+      
+.carousel__item {
+    height: 100%;
+    padding: 1em;
+    font-weight: var(--font-medium);
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+    color: var(--black);
+    padding-bottom: 20px;
+    display: none;
+}
+      
+.carousel__item--selected {
+display: block;
+}
+
+.carousel__nav {
+width: 100%;
+padding: 20px;
+position: absolute;
+bottom: 0;
+left: 0;
+text-align: center;
+}
+
+.carousel__button {
+width: 10px;
+height: 10px;
+display: inline-block;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.carousel__button--selected {
+background: rgba(255, 255, 255, 0.5);
+}
