@@ -10,7 +10,7 @@
     /* Color Variables */
     --background: #dfdfdf;
     --black: #050315;
-    --primary-color: #2f27ce;
+    --primary-color: #aa191e;
 
     /* Font Variables */
     font-family: 'Inter', sans-serif;
@@ -25,10 +25,62 @@ body {
     overflow-x: hidden;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 20px;      
+    margin: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: var(--font-bold);
+}
+
+.menu {
+    list-style: none;               
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;              
+}
+
+.menu a {
+    text-decoration: none;         
+    padding: 8px 12px;              
+    color: var(--black);   
+    position: relative;                 
+}
+
+/* Create the circle */
+.menu a::before {
+    content: "";                           
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 60px;                            
+    height: 40px;                           
+    border: 1px solid #050315;                 
+    border-radius: 90%;                     
+    z-index: -1; /* Puts it behind the text */
+}
+
+.menu a:hover {
+    color: var(--primary-color);                 
+}
+
+
 .container {
     display: grid;
     place-items: center;
     padding: 50px;
+    padding-top: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -37,6 +89,7 @@ h1 {
     font-weight: var(--font-bold);
     font-size: 3rem;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .outlined-text {
@@ -66,8 +119,10 @@ button {
 }
 
 button:hover {   
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+    box-shadow: rgba(20, 20, 20, 0.3) 0px 0px 0px 3px;
 }
+
 
 img {
     height: 300px;
@@ -75,6 +130,7 @@ img {
 
 .carousel {
     position: relative;
+    padding-bottom: 10px;
 }
       
 .carousel__item {
@@ -95,7 +151,6 @@ display: block;
 
 .carousel__nav {
 width: 100%;
-padding: 20px;
 position: absolute;
 bottom: 0;
 left: 0;
@@ -106,12 +161,12 @@ text-align: center;
 width: 10px;
 height: 10px;
 display: inline-block;
-background: rgba(255, 255, 255, 0.2);
+background: rgba(29, 27, 27, 0.2);
 border-radius: 50%;
 margin: 0 5px;
 cursor: pointer;
 }
 
 .carousel__button--selected {
-background: rgba(255, 255, 255, 0.5);
+background: rgba(255, 254, 254, 0.873);
 }
