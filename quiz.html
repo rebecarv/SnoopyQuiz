@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snoopy QUIZ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="content">
+            <header class="header">
+                <h3 class="logo">Boldog Dávid Napot</h3>
+                <ul class="menu">
+                    <li><a href="index.html">Menu</a></li>
+                </ul>
+            </header>
+            <main class="quiz-container">
+                <div class="question" id="question1">
+                    <h3>1. Which Starship-related event would you most want to attend?</h3>
+                    <button onclick="nextQuestion(2)">Next</button>
+                </div>
+                <div class="question" id="question2" style="display: none;">
+                    <h3>What’s your ideal pizza topping combination?</h3>
+                    <button onclick="nextQuestion(3)">Next</button>
+                </div>
+                <!-- Add more questions here in the same structure -->
+                
+                <div class="question" id="question8" style="display: none;">
+                    <h2>Results</h2>
+                    <p>Your personality is...</p>
+                    <!-- Add dynamic result summary here if needed -->
+                </div>
+            </main>
+        </div> 
+        <footer class="footer">
+            <div class="spotify">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5gB2IrxOCX2j9bMnHKP38i?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <div class="footer_txt">
+                <p>Birthday Soundtrack<br><span>A legjobb válogatásában.</span></p>
+            </div>
+        </footer>
+    <script src="script.js"></script> 
+    </body>
+</html>
