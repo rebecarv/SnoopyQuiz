@@ -111,7 +111,7 @@ h1 {
     font-weight: var(--font-bold);
     font-size: 3rem;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .outlined-text {
@@ -120,8 +120,8 @@ h1 {
 }
 
 .btn {
-    padding: 10px;
     margin: 10px;
+    padding-top: 20px;
 }
 
 .start-button {
@@ -147,11 +147,16 @@ h1 {
 
 img {
     height: 300px;
+    padding-top: 0;
+}
+
+.header1 {
+    padding-bottom: 0;
 }
 
 .carousel {
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 2px;
 }
       
 .carousel__item {
@@ -250,13 +255,22 @@ figcaption {
 }
 
 /* Results page */
-
 .results {
-    display: block;
-    align-items: center;
+    text-align: center;
 }
 
 .results > img {
-    align-items: center;
-    padding-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    padding: 20px;
+    font-weight: var(--font-medium);
+    font-size: medium;
+}
+
+.btn {
+    padding-bottom: 40px;
 }
