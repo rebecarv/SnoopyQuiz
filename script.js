@@ -62,20 +62,10 @@ function nextQuestion(questionNumber, selectedOption) {
 
 function displayResult() {
   const maxCount = Math.max(...optionCounts); // Get the highest count
-  const resultIndex = optionCounts.indexOf(maxCount); // Determine which option was selected most
+  const resultIndex = optionCounts.indexOf(maxCount) + 1; // Determine which option was selected most
 
-  // Hide all questions to show the result section
-  document.querySelectorAll('.question').forEach(question => {
-    question.style.display = 'none';
-  });
-
-  // Display the "You got..." message
-  const resultMessage = document.getElementById("result");
-  if (resultMessage) resultMessage.style.display = 'block';
-
-  // Display the specific result based on the selected option counts
-  const selectedResult = document.getElementById(`result${resultIndex + 1}`);
-  if (selectedResult) selectedResult.style.display = 'block';
+  // Redirect to the results page, passing the resultIndex as a query parameter
+  window.location.href = `result.html?result=${resultIndex}`;
 }
 
 // Attach click events to each option in each question
