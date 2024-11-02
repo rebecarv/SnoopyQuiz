@@ -1,2 +1,2 @@
 # SnoopyQuiz
-Which birthday Snoopy are you?
+Which Snoopy are you?
