@@ -97,7 +97,7 @@ body {
     bottom: 0; 
 }
 
-.container {
+.container, .result-container {
     display: grid;
     place-items: center;
     padding: 50px;
@@ -235,6 +235,11 @@ background: rgba(255, 254, 254, 0.873);
 
 .option img:hover {
     transform: scale(1.05); 
+    cursor: pointer;
+}
+
+.option img:active {
+    box-shadow: rgba(20, 20, 20, 0.3) 0px 0px 0px 3px;
 }
 
 figcaption {
@@ -244,27 +249,14 @@ figcaption {
     color: var(--black); 
 }
 
-.button-container {
-    display: flex;
-    justify-content: center; 
-    width: 100%; 
+/* Results page */
+
+.results {
+    display: block;
+    align-items: center;
 }
 
-button {
-    padding: 10px;
-    margin: 10px;
-    margin-top: 30px;
-    width: 100px;
-    height: 50px;
-    background-color: var(--primary-color);
-    color: var(--background);
-    font-weight: var(--font-bold);
-    font-size: medium;
-    padding: 0.8rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.option:hover {
-
+.results > img {
+    align-items: center;
+    padding-bottom: 15px;
 }
