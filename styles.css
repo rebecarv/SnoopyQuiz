@@ -30,7 +30,7 @@ body {
 }
 
 .content {
-    min-height: 98vh;
+    min-height: 99vh;
     
 }
 
@@ -86,7 +86,7 @@ body {
 
 .footer {
     width: 100%;
-    height: 170px;
+    height: auto;
     background-color: #282727;
     display: flex;          
     align-items: center;      
@@ -273,4 +273,101 @@ figcaption {
 
 .btn {
     padding-bottom: 40px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    figcaption {
+        margin-top: 5px;
+    }
+
+    .menu li {
+        display: block; 
+        margin-bottom: 10px;
+    }
+
+    .menu a::before {
+        width: 60px; 
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    h3, .header1 {
+        font-size: 1.5rem;
+    }
+
+    .start-button {
+        font-size: 0.9rem;
+        height: 40px;
+    }
+
+    .options-grid {
+        grid-template-columns: 1fr; /* Display one column on mobile */
+        gap: 10px;
+    }
+
+    .option img {
+        width: 60%; 
+        height: auto;
+    }
+
+    
+    .carousel__button {
+        width: 8px;
+        height: 8px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_txt {
+        margin-bottom: 20px;
+    }
+    
+    .spotify {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    .logo {
+        font-size: 1em;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3, .header1 {
+        font-size: 1.2rem;
+    }
+
+    
+    .container, .quiz-container, .result-container {
+        padding: 20px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_txt {
+        margin-bottom: 10px;
+    }
 }
