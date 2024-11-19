@@ -94,7 +94,12 @@ body {
     gap: 20px;                
     color: whitesmoke;   
     position: relative;
-    bottom: 0; 
+    bottom: 0;
+    padding: 5px;
+}
+
+.spotify {
+    margin-top: 4px;
 }
 
 .container, .result-container {
