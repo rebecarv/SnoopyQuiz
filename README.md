@@ -1,3 +1,3 @@
 # SnoopyQuiz
-### Which Snoopy are you?
+### Take the quiz and find out which Snoopy are you!
 
